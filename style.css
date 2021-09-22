@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+
+background-image: linear-gradient(160deg, #004dc0 0%, #007ac0 100%);
+}
+
+
+header {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+
+}
+.logo{
+    padding: 20px;
+    width: 50%;
+}
+
+.texto {
+    padding: 20px;
+    width: 50%;
+    text-align: right;
+
+}
+
+.texto li {
+    background-color: #fa7000;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline;
+    font-weight: 600;
+    color: white;
+}
+
+.texto li:hover {
+    background-color: #1573af;
+}
+
+.images{
+    width: 200px;
+}
+
+section {
+    background-image: linear-gradient(160deg, #004dc0 0%, #007ac0 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.carrossel {
+    margin: 50px auto;
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+    margin-bottom: -20px;
+}
+
+.container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+
+}
+
+.um {
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+}
+
+#texto1, #texto2, #texto3, #texto4, #texto5 {
+    margin-top: 50px;
+    width: 100%;
+    color: white;
+    letter-spacing: 1.5px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+#texto2 {
+    margin: 50px;
+}
+
+h1 a {
+    background-color: #fa7000;
+    text-decoration: none;
+    border: solid 1px #fa7000;
+    color: #ffff;
+    padding: 1px 5px;
+}
+
+.botoes {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    position: absolute;
+
+}
+
+.botoes div {
+    margin-top: 240px;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    z-index: 9999;
+    font-size: 100px;
+}
+
+.botoes #return {
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 20px;
+    text-align: left;
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+}
+
+.botoes #next {
+    background-color: rgba(0, 0, 0, 0);
+    margin-right: 20px;
+    text-align: right;
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 590px) {
+    #texto1, #texto2, #texto3, #texto4, #texto5 {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 505px) {
+
+    .botoes {
+        margin-top: -80px;
+    }
+
+    .carrossel {
+        margin-top: 30px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .um {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    .botoes {
+        margin-top: -100px;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .texto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .carrossel {
+        margin-top: 30px;
+        width: 350px;
+        height: 350px;
+    }
+
+    .um {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 355px) {
+    .carrossel {
+        margin: 30px auto;
+        width: 300px;
+        height: 300px;
+    }
+
+    .um {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .botoes {
+        margin-top: -125px;
+    }
+
+}
